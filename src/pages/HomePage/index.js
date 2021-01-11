@@ -4,7 +4,7 @@ import Slideshow from '../../components/Slideshow';
 import './styles.css';
 
 
-const Home = () => {
+const HomePage = () => {
 
   return (
     <div className="home">
@@ -73,4 +73,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default HomePage;

@@ -1,20 +1,22 @@
-import Home from "./pages/Home";
+import HomePage from "./pages/HomePage";
 import './App.css';
 import Header from "./components/Header";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ResultsPage from "./pages/ResultsPage";
+
 
 const  App = () => {
   return (
     <Router>
       <div className="app">
         <Switch>
-          <Route path='/category'>
+          <Route path='/results'>
             <Header />
-            <p>I'm the category page</p>
+            <ResultsPage />
           </Route>
           <Route path='/'>
             <Header />
-            <Home />
+            <HomePage />
           </Route>
         </Switch>
       </div>

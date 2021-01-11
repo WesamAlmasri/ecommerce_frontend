@@ -1,3 +1,4 @@
+import React from 'react'
 import './styles.css'
 import logo from '../../assets/images/logo.png';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
