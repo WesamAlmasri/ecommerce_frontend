@@ -37,3 +37,11 @@
 .product__rating {
     margin-bottom: 2px;
 }
+
+.product__addToCartBtn {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    background-color: rgb(40, 200, 90);
+}

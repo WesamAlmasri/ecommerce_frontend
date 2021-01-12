@@ -20,7 +20,7 @@ const Product = (props) => {
                     <strong>{price}</strong>
                 </div>
             </div>
-            
+            <button type="button" className="product__addToCartBtn">Add to cart</button>
         </div>
     )
 }

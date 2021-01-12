@@ -4,7 +4,7 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1700px;
+    max-width: 1300px;
     background-color: white;
 }
 
@@ -12,6 +12,10 @@
     padding: 10px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 5px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgba(128, 128, 128, 0.342);
 }
 
 .results__titleFirstLine {
@@ -36,5 +40,5 @@
     justify-content: center;
     align-items: center;
     padding: 5px;
-    background-color: grey;
+    background-color: rgb(226, 240, 230);
 }
