@@ -3,7 +3,7 @@ import './styles.css';
 import Product from '../../components/Product';
 
 
-function ResultsPage() {
+const ResultsPage = () => {
     return (
         <div className="resulst">
             <div className="results__container">
@@ -64,5 +64,5 @@ function ResultsPage() {
 }
 
 
-export default ResultsPage
+export default ResultsPage;
 
