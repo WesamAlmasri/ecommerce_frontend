@@ -3,17 +3,19 @@ import './styles.css'
 import logo from '../../assets/images/logo.png';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import SearchOutlinedIcon from '@material-ui/icons/SearchOutlined';
-
+import { Link } from 'react-router-dom'; 
 
 
 const Header = () => {
     return (
         <div className="header">
-
-            <img 
-                className="header__logo" 
-                src={logo}
-            />
+            <Link to="/">
+                <img 
+                    className="header__logo" 
+                    src={logo}
+                    alt="logo"
+                />
+            </Link>
             
             <div className="header__search">
                 <select className="header__searchCat">

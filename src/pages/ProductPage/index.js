@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import './styles.css';
+import { useParams } from 'react-router-dom';
 
 
 const ProductPage = () => {
+    const { id } =useParams();
     const images = [
         'https://images-na.ssl-images-amazon.com/images/I/81DCCQDlh8L._AC_SX522_.jpg',
         'https://images-na.ssl-images-amazon.com/images/I/71QFnTd6XlL._AC_SX522_.jpg',

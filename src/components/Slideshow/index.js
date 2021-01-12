@@ -15,18 +15,18 @@ const Slideshow = (props) => {
             alt="" 
           />
 
-          <a class="slidershowPrevBtn" 
+          <div className="slidershowPrevBtn" 
             onClick={()=>setSlideIndex(prev => {
               if(prev - 1 < 1) return images.length;
               return prev - 1;
             })}>&#10094;
-          </a>
-          <a class="slidershowNextBtn" 
+          </div>
+          <div className="slidershowNextBtn" 
             onClick={()=>setSlideIndex(prev => {
               if(prev + 1 > images.length) return 1;
               return prev + 1;
             })}>&#10095;
-          </a>
+          </div>
         </div>
         <div className="slidershowDotsContainer">
           {

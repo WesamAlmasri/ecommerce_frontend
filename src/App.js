@@ -11,11 +11,11 @@ const  App = () => {
     <Router>
       <div className="app">
         <Switch>
-          <Route path='/product'>
+          <Route path='/product/:id'>
             <Header />
             <ProductPage />
           </Route>
-          <Route path='/results'>
+          <Route path='/results/:cat_id'>
             <Header />
             <ResultsPage />
           </Route>

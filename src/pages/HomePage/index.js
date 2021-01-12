@@ -17,26 +17,32 @@ const HomePage = () => {
         />
         <div className="home__row">
           <Category 
+            id={1}
+            title="Electronics"
+            image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
+          />
+          <Category
+            id={2}
             title="Electronics"
             image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
           />
           <Category 
+            id={3}
+            title="Electronics"
+            image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
+          />
+          <Category
+            id={4} 
             title="Electronics"
             image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
           />
           <Category 
+            id={5}
             title="Electronics"
             image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
           />
-          <Category 
-            title="Electronics"
-            image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
-          />
-          <Category 
-            title="Electronics"
-            image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
-          />
-          <Category 
+          <Category
+            id={6} 
             title="Electronics"
             image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
           />
@@ -46,6 +52,7 @@ const HomePage = () => {
 
         <div className="home__row">
           <Product 
+            id={1}
             image="https://images-na.ssl-images-amazon.com/images/I/51GTuVaUpdL.jpg"
             description="AmazonBasics 36 Pack AAA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack"
             seller="Wesam almasri"
@@ -53,6 +60,7 @@ const HomePage = () => {
             price={25.99}
           />
           <Product 
+            id={2}
             image="https://images-na.ssl-images-amazon.com/images/I/41DQoLIfsRL.jpg"
             description="Nintendo Switch with Neon Blue and Neon Red Joy‑Con - HAC-001(-01) "
             seller="joco seller"
@@ -60,6 +68,7 @@ const HomePage = () => {
             price={22}
           />
           <Product 
+            id={3}
             image="https://images-na.ssl-images-amazon.com/images/I/51GTuVaUpdL.jpg"
             description="AmazonBasics 36 Pack AAA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack"
             seller="Wesam almasri"
