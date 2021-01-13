@@ -1,9 +1,25 @@
 import React from 'react'
 import './styles.css';
 import { Link } from 'react-router-dom';
+import { useStateValue } from '../../StateProvider';
 
 const Product = (props) => {
-    const { id, image, description, seller, rating, price } = props;
+    const { id, image, title, seller, rating, price } = props;
+    const [state, dispatch] = useStateValue();
+
+    const addToCart = () => {
+        dispatch({
+            type: 'ADD_TO_CART',
+            item: {
+                id: id,
+                title: title,
+                image: image,
+                price: price,
+                rating: rating,
+            },
+        });
+    }
+
     return (
         <div className="product">
             <Link to={`/product/id=${id}`}>
@@ -14,7 +30,7 @@ const Product = (props) => {
             </Link>
             
             <div className="product__info">
-                <div className="product__description">{description} </div>
+                <div className="product__title">{title} </div>
                 <div className="product__seller">by {seller}</div>
                 <div className="product__rating">
                     {Array(rating).fill().map((_, i) => <span key={i}>&#9733;</span>)}
@@ -24,7 +40,7 @@ const Product = (props) => {
                     <strong>{price}</strong>
                 </div>
             </div>
-            <button type="button" className="product__addToCartBtn">Add to cart</button>
+            <button onClick={addToCart} className="product__addToCartBtn">Add to cart</button>
         </div>
     )
 }

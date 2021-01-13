@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ResultsPage from "./pages/ResultsPage";
 import ProductPage from "./pages/ProductPage";
+import CheckoutPage from "./pages/CheckoutPage";
 
 
 const  App = () => {
@@ -11,6 +12,10 @@ const  App = () => {
     <Router>
       <div className="app">
         <Switch>
+          <Route path='/checkout'>
+            <Header />
+            <CheckoutPage />
+          </Route>
           <Route path='/product/:id'>
             <Header />
             <ProductPage />
