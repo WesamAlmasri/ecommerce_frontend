@@ -5,6 +5,48 @@ import './styles.css';
 
 
 const HomePage = () => {
+  const categories =[
+    {
+      id: 1,
+      title: "Electronics",
+      image:"https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
+    },
+    {
+      id: 2,
+      title: "Electronics",
+      image:"https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
+    },
+    {
+      id: 2,
+      title: "Electronics",
+      image:"https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
+    },
+    {
+      id: 2,
+      title: "Electronics",
+      image:"https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
+    },
+    {
+      id: 2,
+      title: "Electronics",
+      image:"https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
+    },
+    {
+      id: 2,
+      title: "Electronics",
+      image:"https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
+    },
+    {
+      id: 2,
+      title: "Electronics",
+      image:"https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
+    },
+    {
+      id: 2,
+      title: "Electronics",
+      image:"https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
+    },
+  ];
 
   return (
     <div className="home">
@@ -16,36 +58,17 @@ const HomePage = () => {
                 ]}
         />
         <div className="home__row">
-          <Category 
-            id={1}
-            title="Electronics"
-            image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
-          />
-          <Category
-            id={2}
-            title="Electronics"
-            image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
-          />
-          <Category 
-            id={3}
-            title="Electronics"
-            image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
-          />
-          <Category
-            id={4} 
-            title="Electronics"
-            image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
-          />
-          <Category 
-            id={5}
-            title="Electronics"
-            image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
-          />
-          <Category
-            id={6} 
-            title="Electronics"
-            image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
-          />
+          {
+            categories.map((item, index) => (
+              <Category 
+                key={index}
+                id={item.id}
+                title={item.title}
+                image={item.image}
+              />
+            ))
+          }
+          
         </div>
 
         {/* Ads */}
@@ -54,7 +77,7 @@ const HomePage = () => {
           <Product 
             id={1}
             image="https://images-na.ssl-images-amazon.com/images/I/51GTuVaUpdL.jpg"
-            description="AmazonBasics 36 Pack AAA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack"
+            title="AmazonBasics 36 Pack AAA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack"
             seller="Wesam almasri"
             rating={4}
             price={25.99}
@@ -62,7 +85,7 @@ const HomePage = () => {
           <Product 
             id={2}
             image="https://images-na.ssl-images-amazon.com/images/I/41DQoLIfsRL.jpg"
-            description="Nintendo Switch with Neon Blue and Neon Red Joy‑Con - HAC-001(-01) "
+            title="Nintendo Switch with Neon Blue and Neon Red Joy‑Con - HAC-001(-01) "
             seller="joco seller"
             rating={5}
             price={22}
@@ -70,7 +93,7 @@ const HomePage = () => {
           <Product 
             id={3}
             image="https://images-na.ssl-images-amazon.com/images/I/51GTuVaUpdL.jpg"
-            description="AmazonBasics 36 Pack AAA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack"
+            title="AmazonBasics 36 Pack AAA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack"
             seller="Wesam almasri"
             rating={4}
             price={25.99}
