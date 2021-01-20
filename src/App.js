@@ -6,6 +6,7 @@ import ResultsPage from "./pages/ResultsPage";
 import ProductPage from "./pages/ProductPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import LoginPage from "./pages/LoginPage";
+import SignupPage from "./pages/SignupPage";
 
 
 const  App = () => {
@@ -13,6 +14,9 @@ const  App = () => {
     <Router>
       <div className="app">
         <Switch>
+          <Route path='/signup'>
+            <SignupPage />
+          </Route>
           <Route path='/login'>
             <LoginPage />
           </Route>

@@ -15,11 +15,13 @@ const LoginPage = () => {
   return (
     <div className="login">
       <div className="login__container">
-          <img 
-            className="login__logo"
-            src={logo}
-            alt=""
-          />
+        <Link to="/">
+            <img 
+              className="login__logo"
+              src={logo}
+              alt=""
+            />
+          </Link>
           <div className="login__card">
             <h1 className="login__title">Login</h1>
             <div className="login_inputContainer">
