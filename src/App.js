@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ResultsPage from "./pages/ResultsPage";
 import ProductPage from "./pages/ProductPage";
 import CheckoutPage from "./pages/CheckoutPage";
+import LoginPage from "./pages/LoginPage";
 
 
 const  App = () => {
@@ -12,6 +13,9 @@ const  App = () => {
     <Router>
       <div className="app">
         <Switch>
+          <Route path='/login'>
+            <LoginPage />
+          </Route>
           <Route path='/checkout'>
             <Header />
             <CheckoutPage />

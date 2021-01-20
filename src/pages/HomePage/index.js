@@ -1,3 +1,4 @@
+import React from 'react';
 import Category from '../../components/Category';
 import Product from '../../components/Product';
 import Slideshow from '../../components/Slideshow';
